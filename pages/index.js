@@ -78,7 +78,7 @@ export default function Home() {
             <div className="basis-1/4"></div>
             <div className="basis-1/2">
               <h1 className="text-black text-center text-lg font-semibold" style={ibm}>
-                Together we'll offset 24k Tons of CO2 per year.
+                Together we will offset 24k Tons of CO2 per year.
               </h1>
             </div>
             <div className="basis-1/4"></div>
