@@ -23,7 +23,7 @@ const bgImg = {
 
 export default function Home() {
   return(
-    <div id="app" className="grid justify-center content-center my-10">
+    <div id="app" className="grid justify-center content-center my-10 shadow-lg">
       <div className="w-full sm:w-[30rem]">
         <div className="container bg-black">
           <div className="container flex flex-row">
