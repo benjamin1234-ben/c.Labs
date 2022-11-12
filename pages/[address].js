@@ -2,6 +2,7 @@ import Sponsor from "../public/SponsorExample.png";
 import Hexagon from "../public/Hexagon-only.png";
 import Image from "next/image";
 import { IBM_Plex_Mono } from "@next/font/google";
+import { useRouter } from "next/router";
 
 const IBM = IBM_Plex_Mono({
   weight : ["400", "500", "600", "700"],
@@ -22,6 +23,8 @@ const bgImg = {
 };
 
 export default function Home() {
+  const { query } = useRouter();
+
   return(
     <div id="app" className="grid justify-center content-center sm:my-10">
       <div className="w-full sm:w-[30rem] sm:shadow-lg">
@@ -58,7 +61,7 @@ export default function Home() {
           <div className="container flex flex-row py-2">
             <div className="basis-1/4"></div>
             <div className="basis-1/2 text-center">
-              <a href="#" className="text-white text-xl underline" style={ibm}>46k transactions</a>
+              <a href={`https://alfajores.celoscan.io/address/${query.address}`} className="text-white text-xl underline" style={ibm}>46k transactions</a>
             </div>
             <div className="basis-1/4"></div>
           </div>
