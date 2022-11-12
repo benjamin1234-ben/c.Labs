@@ -61,7 +61,7 @@ export default function Home() {
           <div className="container flex flex-row py-2">
             <div className="basis-1/4"></div>
             <div className="basis-1/2 text-center">
-              <a href={`https://alfajores.celoscan.io/address/${query.address}`} className="text-white text-xl underline" style={ibm}>46k transactions</a>
+              <a href={`https://alfajores.celoscan.io/address/${query.address}`} target="_blank" className="text-white text-xl underline" style={ibm}>46k transactions</a>
             </div>
             <div className="basis-1/4"></div>
           </div>
